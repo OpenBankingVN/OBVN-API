@@ -1,6 +1,6 @@
 module github.com/OpenBankingVN/OBVN-API
 
-go 1.24
+go 1.25
 
 tool (
 	github.com/daixiang0/gci
