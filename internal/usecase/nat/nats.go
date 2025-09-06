@@ -1,6 +1,6 @@
 package usecase
 
-import "github.com/ducnpdev/godev-kit/internal/repo"
+import "github.com/OpenBankingVN/OBVN-API/internal/repo"
 
 type Nats interface {
 	Publish(subject string, data []byte) error

@@ -4,10 +4,10 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/ducnpdev/godev-kit/internal/controller/http/v1/request"
-	"github.com/ducnpdev/godev-kit/internal/controller/http/v1/response"
-	"github.com/ducnpdev/godev-kit/internal/entity"
-	"github.com/ducnpdev/godev-kit/internal/usecase/payment"
+	"github.com/OpenBankingVN/OBVN-API/internal/controller/http/v1/request"
+	"github.com/OpenBankingVN/OBVN-API/internal/controller/http/v1/response"
+	"github.com/OpenBankingVN/OBVN-API/internal/entity"
+	"github.com/OpenBankingVN/OBVN-API/internal/usecase/payment"
 	"github.com/gin-gonic/gin"
 	"github.com/rs/zerolog"
 )

@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ducnpdev/godev-kit/internal/entity"
-	"github.com/ducnpdev/godev-kit/internal/repo"
-	"github.com/ducnpdev/godev-kit/internal/repo/persistent/models"
+	"github.com/OpenBankingVN/OBVN-API/internal/entity"
+	"github.com/OpenBankingVN/OBVN-API/internal/repo"
+	"github.com/OpenBankingVN/OBVN-API/internal/repo/persistent/models"
 	"github.com/golang-jwt/jwt/v4"
 	"github.com/jackc/pgx/v5"
 	"golang.org/x/crypto/bcrypt"

@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/ducnpdev/godev-kit/internal/entity"
-	"github.com/ducnpdev/godev-kit/internal/repo"
+	"github.com/OpenBankingVN/OBVN-API/internal/entity"
+	"github.com/OpenBankingVN/OBVN-API/internal/repo"
 	"github.com/rs/zerolog"
 )
 

@@ -3,9 +3,9 @@ package redis
 import (
 	"context"
 
-	"github.com/ducnpdev/godev-kit/internal/entity"
-	"github.com/ducnpdev/godev-kit/internal/repo"
-	"github.com/ducnpdev/godev-kit/internal/repo/persistent"
+	"github.com/OpenBankingVN/OBVN-API/internal/entity"
+	"github.com/OpenBankingVN/OBVN-API/internal/repo"
+	"github.com/OpenBankingVN/OBVN-API/internal/repo/persistent"
 )
 
 // RedisUseCase -.

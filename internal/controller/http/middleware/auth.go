@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/ducnpdev/godev-kit/pkg/logger"
+	"github.com/OpenBankingVN/OBVN-API/pkg/logger"
 	"github.com/gin-gonic/gin"
 	"github.com/golang-jwt/jwt/v4"
 )

@@ -1,6 +1,6 @@
 package response
 
-import "github.com/ducnpdev/godev-kit/internal/entity"
+import "github.com/OpenBankingVN/OBVN-API/internal/entity"
 
 // RedisValue represents a key-value pair for Redis.
 type RedisValue struct {

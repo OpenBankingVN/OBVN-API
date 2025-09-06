@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/ducnpdev/godev-kit/internal/entity"
-	"github.com/ducnpdev/godev-kit/internal/repo/persistent/models"
-	"github.com/ducnpdev/godev-kit/pkg/postgres"
+	"github.com/OpenBankingVN/OBVN-API/internal/entity"
+	"github.com/OpenBankingVN/OBVN-API/internal/repo/persistent/models"
+	"github.com/OpenBankingVN/OBVN-API/pkg/postgres"
 )
 
 const _defaultEntityCap = 64

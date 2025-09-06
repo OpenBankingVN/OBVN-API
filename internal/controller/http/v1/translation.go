@@ -3,8 +3,8 @@ package v1
 import (
 	"net/http"
 
-	"github.com/ducnpdev/godev-kit/internal/controller/http/v1/request"
-	"github.com/ducnpdev/godev-kit/internal/entity"
+	"github.com/OpenBankingVN/OBVN-API/internal/controller/http/v1/request"
+	"github.com/OpenBankingVN/OBVN-API/internal/entity"
 	"github.com/gin-gonic/gin"
 )
 

@@ -3,7 +3,7 @@ package vietqr
 import (
 	"context"
 
-	"github.com/ducnpdev/godev-kit/internal/entity"
+	"github.com/OpenBankingVN/OBVN-API/internal/entity"
 	"github.com/ducnpdev/vietqr"
 )
 

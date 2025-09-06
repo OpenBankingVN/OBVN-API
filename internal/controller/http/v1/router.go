@@ -1,8 +1,8 @@
 package v1
 
 import (
-	"github.com/ducnpdev/godev-kit/internal/usecase"
-	"github.com/ducnpdev/godev-kit/pkg/logger"
+	"github.com/OpenBankingVN/OBVN-API/internal/usecase"
+	"github.com/OpenBankingVN/OBVN-API/pkg/logger"
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"
 )

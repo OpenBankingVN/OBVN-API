@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	translator "github.com/Conight/go-googletrans"
-	"github.com/ducnpdev/godev-kit/internal/entity"
+	"github.com/OpenBankingVN/OBVN-API/internal/entity"
 )
 
 // TranslationWebAPI -.

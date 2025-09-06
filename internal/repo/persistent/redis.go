@@ -5,9 +5,9 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/ducnpdev/godev-kit/internal/entity"
-	"github.com/ducnpdev/godev-kit/internal/repo/persistent/models"
-	"github.com/ducnpdev/godev-kit/pkg/redis"
+	"github.com/OpenBankingVN/OBVN-API/internal/entity"
+	"github.com/OpenBankingVN/OBVN-API/internal/repo/persistent/models"
+	"github.com/OpenBankingVN/OBVN-API/pkg/redis"
 )
 
 const _defaultTimeout = 5 * time.Second

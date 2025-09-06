@@ -4,8 +4,8 @@ import (
 	"context"
 
 	"github.com/Masterminds/squirrel"
-	"github.com/ducnpdev/godev-kit/internal/entity"
-	"github.com/ducnpdev/godev-kit/pkg/postgres"
+	"github.com/OpenBankingVN/OBVN-API/internal/entity"
+	"github.com/OpenBankingVN/OBVN-API/pkg/postgres"
 )
 
 type VietQRRepo struct {

@@ -3,7 +3,7 @@ package models
 import (
 	"time"
 
-	"github.com/ducnpdev/godev-kit/internal/entity"
+	"github.com/OpenBankingVN/OBVN-API/internal/entity"
 )
 
 // ShipperLocationModel represents the DB model for shipper location

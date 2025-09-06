@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"path/filepath"
 
-	"github.com/ducnpdev/godev-kit/internal/controller/http/v1/request"
-	"github.com/ducnpdev/godev-kit/internal/controller/http/v1/response"
-	"github.com/ducnpdev/godev-kit/internal/usecase/billing"
+	"github.com/OpenBankingVN/OBVN-API/internal/controller/http/v1/request"
+	"github.com/OpenBankingVN/OBVN-API/internal/controller/http/v1/response"
+	"github.com/OpenBankingVN/OBVN-API/internal/usecase/billing"
 	"github.com/gin-gonic/gin"
 	"github.com/rs/zerolog"
 )
@@ -87,4 +87,4 @@ func (c *BillingController) GenerateInvoicePDF(ctx *gin.Context) {
 	ctx.JSON(http.StatusOK, response.GenerateInvoicePDFResponse{
 		FilePath: outputPath,
 	})
-} 
+}

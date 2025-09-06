@@ -4,8 +4,8 @@ package usecase
 import (
 	"context"
 
-	"github.com/ducnpdev/godev-kit/internal/entity"
-	"github.com/ducnpdev/godev-kit/internal/usecase/billing"
+	"github.com/OpenBankingVN/OBVN-API/internal/entity"
+	"github.com/OpenBankingVN/OBVN-API/internal/usecase/billing"
 )
 
 //go:generate mockgen -source=contracts.go -destination=./mocks_usecase_test.go -package=usecase_test

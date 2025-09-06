@@ -7,9 +7,9 @@ import (
 	"time"
 
 	"github.com/Masterminds/squirrel"
-	"github.com/ducnpdev/godev-kit/internal/entity"
-	"github.com/ducnpdev/godev-kit/internal/repo/persistent/models"
-	"github.com/ducnpdev/godev-kit/pkg/postgres"
+	"github.com/OpenBankingVN/OBVN-API/internal/entity"
+	"github.com/OpenBankingVN/OBVN-API/internal/repo/persistent/models"
+	"github.com/OpenBankingVN/OBVN-API/pkg/postgres"
 	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/pgxpool"
 )

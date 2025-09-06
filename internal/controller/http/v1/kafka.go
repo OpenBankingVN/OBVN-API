@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/ducnpdev/godev-kit/internal/controller/http/v1/request"
+	"github.com/OpenBankingVN/OBVN-API/internal/controller/http/v1/request"
 	"github.com/gin-gonic/gin"
 )
 

@@ -3,8 +3,8 @@ package persistent
 import (
 	"context"
 
-	"github.com/ducnpdev/godev-kit/internal/repo"
-	"github.com/ducnpdev/godev-kit/pkg/kafka"
+	"github.com/OpenBankingVN/OBVN-API/internal/repo"
+	"github.com/OpenBankingVN/OBVN-API/pkg/kafka"
 	"github.com/rs/zerolog"
 )
 

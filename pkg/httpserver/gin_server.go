@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/ducnpdev/godev-kit/config"
+	"github.com/OpenBankingVN/OBVN-API/config"
 	"github.com/gin-gonic/gin"
 )
 

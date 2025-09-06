@@ -5,8 +5,8 @@ import (
 	"context"
 
 	"github.com/Masterminds/squirrel"
-	"github.com/ducnpdev/godev-kit/internal/entity"
-	"github.com/ducnpdev/godev-kit/internal/repo/persistent/models"
+	"github.com/OpenBankingVN/OBVN-API/internal/entity"
+	"github.com/OpenBankingVN/OBVN-API/internal/repo/persistent/models"
 	"github.com/jackc/pgx/v5/pgxpool"
 )
 

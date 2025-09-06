@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ducnpdev/godev-kit/internal/entity"
-	"github.com/ducnpdev/godev-kit/internal/repo/persistent"
-	"github.com/ducnpdev/godev-kit/pkg/kafka"
+	"github.com/OpenBankingVN/OBVN-API/internal/entity"
+	"github.com/OpenBankingVN/OBVN-API/internal/repo/persistent"
+	"github.com/OpenBankingVN/OBVN-API/pkg/kafka"
 	"github.com/rs/zerolog"
 )
 

@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ducnpdev/godev-kit/pkg/logger"
-	rmqrpc "github.com/ducnpdev/godev-kit/pkg/rabbitmq/rmq_rpc"
+	"github.com/OpenBankingVN/OBVN-API/pkg/logger"
+	rmqrpc "github.com/OpenBankingVN/OBVN-API/pkg/rabbitmq/rmq_rpc"
 	"github.com/goccy/go-json"
 	amqp "github.com/rabbitmq/amqp091-go"
 )

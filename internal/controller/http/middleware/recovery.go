@@ -5,7 +5,7 @@ import (
 	"runtime/debug"
 	"strings"
 
-	"github.com/ducnpdev/godev-kit/pkg/logger"
+	"github.com/OpenBankingVN/OBVN-API/pkg/logger"
 	"github.com/gofiber/fiber/v2"
 	fiberRecover "github.com/gofiber/fiber/v2/middleware/recover"
 )

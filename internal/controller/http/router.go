@@ -5,14 +5,14 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/ducnpdev/godev-kit/config"
-	"github.com/ducnpdev/godev-kit/internal/controller/http/middleware"
-	v1 "github.com/ducnpdev/godev-kit/internal/controller/http/v1"
+	"github.com/OpenBankingVN/OBVN-API/config"
+	"github.com/OpenBankingVN/OBVN-API/internal/controller/http/middleware"
+	v1 "github.com/OpenBankingVN/OBVN-API/internal/controller/http/v1"
 
-	"github.com/ducnpdev/godev-kit/internal/usecase"
-	"github.com/ducnpdev/godev-kit/internal/usecase/billing"
-	"github.com/ducnpdev/godev-kit/internal/usecase/payment"
-	"github.com/ducnpdev/godev-kit/pkg/logger"
+	"github.com/OpenBankingVN/OBVN-API/internal/usecase"
+	"github.com/OpenBankingVN/OBVN-API/internal/usecase/billing"
+	"github.com/OpenBankingVN/OBVN-API/internal/usecase/payment"
+	"github.com/OpenBankingVN/OBVN-API/pkg/logger"
 
 	"github.com/gin-gonic/gin"
 	"github.com/prometheus/client_golang/prometheus/promhttp"

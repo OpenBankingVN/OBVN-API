@@ -3,7 +3,7 @@ package usecase
 import (
 	"context"
 
-	"github.com/ducnpdev/godev-kit/internal/repo"
+	"github.com/OpenBankingVN/OBVN-API/internal/repo"
 )
 
 type Kafka interface {
