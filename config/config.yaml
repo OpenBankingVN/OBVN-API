@@ -1,0 +1,68 @@
+APP:
+  NAME: godev-kit
+  VERSION: 1.0.0
+  MODE: debug
+
+HTTP:
+  PORT: 10000
+  READ_TIMEOUT: 3s      # Time to read the request (including body)
+  WRITE_TIMEOUT: 6s    # Time to write the response
+  IDLE_TIMEOUT: 30s     # Time to keep connection alive
+  SHUTDOWN_TIMEOUT: 5s  # Time to wait for graceful shutdown
+  USE_PREFORK_MODE: false # Use prefork mode to improve performance
+  API_TIMEOUT: 5s # 5 second
+
+LOG:
+  LEVEL: debug
+  IN_COMMING_REQUEST:
+    PRINT_REQUEST: true
+    PRINT_RESPONSE: true
+  OUT_COMMING_REQUEST:
+    PRINT_REQUEST: true
+    PRINT_RESPONSE: true
+PG:
+  POOL_MAX: 10
+  POOL_MIN: 2
+  MAX_CONN_LIFETIME: 30m
+  MAX_CONN_IDLE_TIME: 10m
+  HEALTH_CHECK_PERIOD: 1m
+  URL: "postgres://godevkit:1@localhost:5433/godevkit?sslmode=disable"
+
+REDIS:
+  URL: "redis://localhost:6379/0"
+
+GRPC:
+  PORT: "9000"
+
+RMQ:
+  RPC_SERVER: rpc_server
+  RPC_CLIENT: rpc_client
+  URL: amqp://guest:guest@localhost:5672/
+
+KAFKA:
+  BROKERS:
+    - localhost:9092
+  GROUP_ID: godev-kit-group
+  TOPICS:
+    USER_EVENTS: dev.user-events
+    # kafka-topics --create --topic dev.user-events --bootstrap-server localhost:9092 --replication-factor 1 --partitions 4
+    TRANSLATION_EVENTS: dev.translation-events
+    # kafka-topics --create --topic dev.translation-events --bootstrap-server localhost:9092 --replication-factor 1 --partitions 4
+  CONTROL:
+    PRODUCER_ENABLED: false   # Enable/disable Kafka producer
+    CONSUMER_ENABLED: false   # Enable/disable Kafka consumer
+
+NATS:
+  URL: nats://localhost:4222
+  TIMEOUT: 3s
+  ENABLE: false
+
+METRICS:
+  ENABLED: true
+  SKIP_PATHS: "/swagger/*;/metrics"
+  PATH: "/metrics"
+SWAGGER:
+  ENABLED: true
+
+JWT:
+  SECRET: "123"
