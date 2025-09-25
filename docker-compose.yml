@@ -1,0 +1,37 @@
+services:
+  postgres:
+    image: postgres:13
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "${DB_PORT:-5433}:5432"
+    volumes:
+      - obp_pg_data:/var/lib/postgresql/data
+
+  obp-api:
+    image: openbankproject/obp-api:latest
+    restart: unless-stopped
+    depends_on:
+      - postgres
+    ports:
+      - "${OBP_PORT:-8080}:8080"
+    environment:
+      OBP_CONNECTOR: "mapped"
+      OBP_HOSTNAME: "http://localhost:${OBP_PORT:-8080}"
+      OBP_DB_URL: "jdbc:postgresql://postgres:5432/${POSTGRES_DB}?user=${POSTGRES_USER}&password=${POSTGRES_PASSWORD}"
+      OBP_AUTHUSER_SKIPEMAILVALIDATION: "true"
+      OBP_ALLOW_SANDBOX_ACCOUNT_CREATION: "true"
+      OBP_ALLOW_SANDBOX_DATA_IMPORT: "true"
+      OBP_CONSUMERS_ENABLED_BY_DEFAULT: "true"
+      OBP_SUPER_ADMIN_USERNAME: ${OBP_SUPER_ADMIN_USERNAME}
+      OBP_SUPER_ADMIN_PASSWORD: ${OBP_SUPER_ADMIN_PASSWORD}
+      OBP_SUPER_ADMIN_EMAIL: ${OBP_SUPER_ADMIN_EMAIL}
+      OBP_SUPER_ADMIN_USER_IDS: ${OBP_SUPER_ADMIN_USER_IDS}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+volumes:
+  obp_pg_data:
